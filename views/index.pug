@@ -1,0 +1,141 @@
+html(lang="id")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="assets/css/style.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css")
+
+    script(src="https://code.jquery.com/jquery-3.6.0.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js")   
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js") 
+    script(src="node_modules/three/build/three.js") 
+
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css")
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css", integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl", crossorigin="anonymous")
+    link(rel="shortcut icon", href="https://i.ibb.co/phjzrbf/Screenshot-2.png", type="image")
+
+    title Mohammad Dyvani Wahyu Wildana
+
+  body
+    //- NAVBAR
+    .scroll-up-btn
+      i.fas.fa-angle-up 
+
+    nav.navbar-port 
+      .max-width
+        .logo
+          a(href="#home")
+            ='My'
+            span 
+              ='Web.' 
+      
+        ul.menu 
+          li 
+            a(href="#home").menu-btn
+              ='Home'
+          li 
+            a(href="#about").menu-btn
+              ='About'
+          li
+            a(href="#contact").menu-btn
+              ='Contact'
+      
+        .menu-btn 
+          i.fas.fa-bars
+
+    //- HOME SECTION
+    section.home#home
+      .max-width 
+        .home-content
+          .text-1
+            ='Hello, my name is'
+          .text-2 
+            ='Mohammad Dyvani Wahyu Wildana'
+          .text-3 
+            ="And I'm a "
+            span.typing
+          a(href="#about")
+            ='Here me'
+
+    //- ABOUT SECTION
+    section.about#about 
+      .max-width 
+        h2.title 
+          ='About me'
+        .about-content 
+          .column.left 
+            img(src="assets/images/picture.jpg", alt="")
+
+          .column.right 
+            .text 
+              ="I'm Wildan and I'm a "
+              span.typing-2
+            p 
+              ='Saya berkuliah di Politeknik Negeri Banyuwangi dengan mengambil program studi D4-Teknik Rekayasa Perangkat Lunak. Saya berusia 21 tahun, saya mudah dalam beradaptasi dengan lingkungan sekitar, dapat bekerja keras, bekerja sama dalam tim, dan mudah berkomunikasi dengan orang lain. Selain itu saya juga memiliki bisnis sampingan yang bergerak di bidang pakaian olahraga (sportsware).'
+            a(href="https://www.instagram.com/dysport_banyuwangi/")
+              ='My Business'
+
+    //- CONTACT SECTION
+    section.contact#contact 
+      .max-width 
+        h2.title
+          ='Contact me'
+        .contact-content 
+          .column.left 
+            .icons 
+              .row 
+                .col-md-1 
+                  i.fas.fa-user 
+                .col-md-11 
+                  .info 
+                    .head 
+                      ='Name'
+                    .sub-title 
+                      ='Mohammad Dyvani Wahyu Wildana'
+
+              .row 
+                .col-md-1 
+                  i.fas.fa-map-marker-alt  
+                .col-md-11 
+                  .info 
+                    .head 
+                      ='Address'
+                    .sub-title 
+                      ='Muncar, Banyuwangi'
+
+              .row 
+                .col-md-1 
+                  i.fas.fa-envelope  
+                .col-md-11 
+                  .info 
+                    .head 
+                      ='Email'
+                    .sub-title 
+                      ='mdyvani@gmail.com'
+
+          .column.right
+            .text 
+              ='Message me'
+            form(action="#")
+              .row 
+                .col-md-6 
+                  input(type="text", placeholder="Name").form-control
+                .col-md-6 
+                  input(type="email", placeholder="Email").form-control
+              .col-md-12 
+                input(type="text", placeholder="Subject").form-control
+              .col-md-12.mt-3
+                textarea(name="", cols="3", rows="4", placeholder="Message...").form-control
+              .button-area.mt-3
+                  button(type="submit")
+                    ='Send message'
+
+    //- FOOTER SECTION
+    footer 
+      span 
+        ='Created By Mohammad Dyvani Wahyu Wildana '
+        span.far.fa-copyright
+        =' 2022 All rights reserved.'
+
+    script(src="assets/js/script.js") 
